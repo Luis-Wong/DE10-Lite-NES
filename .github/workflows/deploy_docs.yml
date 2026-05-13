@@ -1,0 +1,28 @@
+name: Deploy Documentation
+on:
+  push:
+    branches:
+      - main  # Adjust this if your default branch is 'master'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configure Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          # Add any other mkdocs plugins you use here, like:
+          # pip install mkdocs-mermaid2-plugin 
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
