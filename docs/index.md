@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# About This Project
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This project focuses on the implementation of an NES core on the **DE10-Lite FPGA**, utilizing Verilog for custom hardware logic and a Nios II soft-processor for system management.
 
-## Commands
+## Technical Objectives
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **Custom 6502 CPU:** A from-scratch Verilog implementation of the 6502 processor.
+* **Graphics & Video:** Interfacing PPU with VGA output to render classic NES sprites and backgrounds.
+* **Memory Management:** Utilizing the MAX 10's internal memory and SDRAM for ROM loading.
 
-## Project layout
+## Development Tools
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* **Hardware Description:** Verilog and SystemVerilog
+* **Platform:** Intel Quartus Prime 25.1 (MAX 10 / DE10-Lite)
+* **System Integration:** Nios II Soft-Processor & Avalon-MM Interconnect
