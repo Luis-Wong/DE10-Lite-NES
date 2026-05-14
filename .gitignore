@@ -1,0 +1,44 @@
+# === MkDocs ===
+site/
+venv/
+.venv/
+
+# === Intel Quartus (FPGA) ===
+# Ignore all compilation artifacts and database files
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+hc_output/
+hps_isw_software/
+simulation/
+*.rpt
+*.summary
+*.jdi
+*.done
+*.pin
+*.qws
+*.bak
+*.orig
+*.swp
+
+# === Nios II / Embedded Software ===
+# Ignore compiled binaries and Eclipse metadata
+software/*/obj/
+software/*/Makefile
+software/*/.project
+software/*/.cproject
+software/*/.settings/
+*.elf
+*.obj
+*.o
+
+# === Simulation (ModelSim / Questa) ===
+work/
+transcript
+vsim.wlf
+*.vstf
+
+# === OS/Misc ===
+.DS_Store
+Thumbs.db
