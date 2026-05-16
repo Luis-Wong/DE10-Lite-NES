@@ -1,6 +1,6 @@
 # About This Project
 
-This project focuses on the implementation of an NES core on the **DE10-Lite FPGA**, utilizing Verilog for custom hardware logic and a Nios II soft-processor for system management.
+This project focuses on the implementation of an NES core on the **DE10-Lite FPGA**, utilizing Verilog for custom hardware logic.
 
 ## Technical Objectives
 
@@ -12,4 +12,9 @@ This project focuses on the implementation of an NES core on the **DE10-Lite FPG
 
 * **Hardware Description:** Verilog and SystemVerilog
 * **Platform:** Intel Quartus Prime 25.1 (MAX 10 / DE10-Lite)
-* **System Integration:** Nios II Soft-Processor & Avalon-MM Interconnect
+
+## Future Objectives
+
+* **System Integration:** Nios II Soft-Processor & Avalon-MM Interconnect for control and memory management.
+* **Audio Output:** Implementing APU functionality for sound generation.
+* **NES Cartridge Support:** Loading and executing ROMs from external storage.

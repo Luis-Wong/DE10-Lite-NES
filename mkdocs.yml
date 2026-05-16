@@ -24,9 +24,21 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 nav:
   - About: index.md
   - Architecture: architecture.md
-  - CPU Core: RP2A03.md
+  - RP2A03 CPU: 
+    - RP2A03.md
+    - ALU.md
+  - RP2C02 PPU: RP2C02.md
+  - VGA Output:
+    - Overview: vga_overview.md
+    - Binary to 7-Segment: binary_to_7seg.md
   - References: references.md
