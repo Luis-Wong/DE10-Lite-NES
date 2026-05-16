@@ -12,6 +12,7 @@ greybox_tmp/
 hc_output/
 hps_isw_software/
 simulation/
+.qsys_edit/
 *.rpt
 *.summary
 *.jdi
@@ -21,6 +22,7 @@ simulation/
 *.bak
 *.orig
 *.swp
+*.xml
 
 # === Nios II / Embedded Software ===
 # Ignore compiled binaries and Eclipse metadata
@@ -36,6 +38,9 @@ software/*/.settings/
 # === Simulation (ModelSim / Questa) ===
 work/
 transcript
+modelsim.ini
+NES_questa.mpf
+NES_questa.cr.mti
 vsim.wlf
 *.vstf
 
